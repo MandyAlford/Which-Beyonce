@@ -18,8 +18,8 @@ header {
 
 h1 {
   font-size: 16px;
-  text-align: center;
   padding: 13px;
+  text-align: center;
 }
 
 .menu {
@@ -29,10 +29,16 @@ h1 {
   position: absolute;
 }
 
+/* Main Section */
 main {
   background: url(assets/beyonce-COB-bw.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 500px;
+}
+
+.player-form {
+  padding-top: 100px;
+  text-align: center;
 }
