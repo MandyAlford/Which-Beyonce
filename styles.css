@@ -35,13 +35,13 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 500px;
+  min-height: 1000px;
 }
 
 .player-form {
-  padding-top: 100px;
-  padding-left: 25%;
-  padding-right: 25%;
+  padding-top: 300px;
+  padding-left: 35%;
+  padding-right: 35%;
   text-align: center;
 }
 
@@ -64,6 +64,6 @@ main {
   background-color: black;
   color: white;
   height: 50px;
-  margin-top: 100px;
+  margin-top: 200px;
   width: 100%;
 }
