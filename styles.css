@@ -40,5 +40,30 @@ main {
 
 .player-form {
   padding-top: 100px;
+  padding-left: 25%;
+  padding-right: 25%;
   text-align: center;
+}
+
+.player-name{
+  display: block;
+  height: 50px;
+  width: 300px;
+}
+
+.player-1-name {
+  float: left;
+}
+
+.player-2-name {
+  float: right;
+}
+
+
+#play-game {
+  background-color: black;
+  color: white;
+  height: 50px;
+  margin-top: 100px;
+  width: 100%;
 }
