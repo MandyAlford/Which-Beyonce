@@ -15,9 +15,13 @@ function showInstructions(){
 function enableGameBtn() {
   // event.preventDefault();
   if (player1Name.value === "") {
-    console.log("test works");
     warning.innerHTML = "You must enter a name";
+  } else if(this.haveInstructionsBeenShown === true) {
+    document.querySelector(".game-instructions").classList.add("hidden")
+    playGameBtn.classList.add("hidden")
+    document.querySelector("main").style.background = "white"
   } else {
+    this.haveInstructionsBeenShown= true;
     showInstructions();
   }
 }
