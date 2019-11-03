@@ -19,7 +19,7 @@ function enableGameBtn() {
   } else if(this.haveInstructionsBeenShown === true) {
     document.querySelector(".game-instructions").classList.add("hidden")
     playGameBtn.classList.add("hidden")
-    document.querySelector("main").style.background = "white"
+    document.querySelector("main").style.background = "#F5F7F6"
     document.querySelector(".card-section").classList.remove("hidden")
   } else {
     this.haveInstructionsBeenShown= true;

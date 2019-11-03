@@ -95,78 +95,105 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding-top: 2%;
 }
 
 .player1-tracker {
   background-color: black;
+  color: #F5F7F6;
   grid-column: 1 / span 2;
   grid-row: 1 / span 4;
+  padding: 7%;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-right: 100px;
+  text-align: center;
+}
+
+.p1-match-counter {
+  border-top: solid #F5F7F6 2px;
+  border-bottom: solid #F5F7F6 2px;
+  color: #F5F7F6;
 }
 
 .player2-tracker {
   background-color: black;
   grid-column: 10 / span 2;
   grid-row: 1 / span 4;
+  margin-left: 100px;
+}
+
+h2 {
+  padding: 4%
+}
+
+h3 {
+  font-size: 22px;
+  padding: 2%
+}
+
+.match-counter {
+  font-size: 68px;
 }
 
 #card-a {
     background-color: yellow;
     grid-column: 4;
-    transform: translate(0px, 20px) rotate(-30deg);
+    transform: rotate(-30deg);
 }
 
 #card-b {
      background-color: red;
      grid-column: 6;
-     transform: translate(0px, 20px) rotate(10deg);
+     transform: rotate(10deg);
 }
 
 #card-c {
      background-color: green;
      grid-column: 8;
-     transform: translate(0px, 20px) rotate(-5deg);
+     transform: rotate(-5deg);
 }
 
 #card-d {
      background-color: purple;
      grid-column: 3;
-     transform: translate(0px, 20px) rotate(10deg);
+     transform: rotate(10deg);
 }
 
 #card-e {
      background-color: white;
      grid-column: 5;
-     transform: translate(0px, 20px) rotate(-05deg);
+     transform: rotate(-05deg);
 }
 
 #card-f {
      background-color: pink;
      grid-column: 7;
-     transform: translate(0px, 20px) rotate(-20deg);
+     transform: rotate(-20deg);
 }
 
 #card-g {
      background-color: blue;
      grid-column: 9;
-     transform: translate(0px, 20px) rotate(30deg);
+     transform: rotate(30deg);
 }
 
 #card-h {
      background-color: teal;
      grid-column: 4;
-     transform: translate(30px, 20px) rotate(-15deg);
+     transform: rotate(-15deg);
 }
 
 #card-i {
     background-color: gray;
     grid-column: 6;
-    transform: translate(30px, 20px) rotate(-5deg);
+    transform: rotate(-5deg);
 }
 
 #card-j {
     background-color: orange;
     grid-column: 8;
-    transform: translate(30px, 20px) rotate(15deg);
+    transform: rotate(15deg);
 }
 
 .front, .back {
