@@ -85,3 +85,11 @@ p {
   margin-top: 15%;
   width: 100%;
 }
+
+.disabled {
+  pointer-events: none;
+}
+
+.warning {
+  color: red;
+}
