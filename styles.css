@@ -93,66 +93,79 @@ p {
 /* CARD SECTION  */
 .card-section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1f 1fr 1fr
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.player1-tracker {
+  background-color: black;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 4;
+}
+
+.player2-tracker {
+  background-color: black;
+  grid-column: 10 / span 2;
+  grid-row: 1 / span 4;
 }
 
 #card-a {
     background-color: yellow;
-    grid-column: 2;
+    grid-column: 4;
     transform: translate(0px, 20px) rotate(-30deg);
 }
 
 #card-b {
      background-color: red;
-     grid-column: 4;
+     grid-column: 6;
      transform: translate(0px, 20px) rotate(10deg);
 }
 
 #card-c {
      background-color: green;
-     grid-column: 6;
+     grid-column: 8;
      transform: translate(0px, 20px) rotate(-5deg);
 }
 
 #card-d {
      background-color: purple;
-     grid-column: 1;
+     grid-column: 3;
      transform: translate(0px, 20px) rotate(10deg);
 }
 
 #card-e {
      background-color: white;
-     grid-column: 3;
+     grid-column: 5;
      transform: translate(0px, 20px) rotate(-05deg);
 }
 
 #card-f {
      background-color: pink;
-     grid-column: 5;
+     grid-column: 7;
      transform: translate(0px, 20px) rotate(-20deg);
 }
 
 #card-g {
      background-color: blue;
-     grid-column: 7;
+     grid-column: 9;
      transform: translate(0px, 20px) rotate(30deg);
 }
 
 #card-h {
      background-color: teal;
-     grid-column: 2;
+     grid-column: 4;
      transform: translate(30px, 20px) rotate(-15deg);
 }
 
 #card-i {
     background-color: gray;
-    grid-column: 4;
+    grid-column: 6;
     transform: translate(30px, 20px) rotate(-5deg);
 }
 
 #card-j {
     background-color: orange;
-    grid-column: 6;
+    grid-column: 8;
     transform: translate(30px, 20px) rotate(15deg);
 }
 
