@@ -106,7 +106,7 @@ p {
   padding: 7%;
   padding-left: 15%;
   padding-right: 15%;
-  margin-right: 100px;
+  margin-right: 10%;
   text-align: center;
 }
 
@@ -125,7 +125,7 @@ p {
   padding: 7%;
   padding-left: 15%;
   padding-right: 15%;
-  margin-left: 100px;
+  margin-left: 10%;
   text-align: center;
 }
 
@@ -250,8 +250,8 @@ h3 {
 .memory-card {
   border: 2px solid;
   box-shadow: 0px 1px 5px #555;
-  width: 200px;
-  height: 350px;
+  width: 100px;
+  height: 175px;
   position: relative;
   transform-style: preserve-3d;
   transition: transform .5s;
