@@ -10,14 +10,13 @@
 
 /* HEADER */
 header {
-  /* background-color: #FFFFFF; */
-  background-color: red;
-  color: black;
+  background-color: black;
+  color: white;
   height:50px;
 }
 
 h1 {
-  font-size: 16px;
+  font-size: 20px;
   padding: 13px;
   text-align: center;
 }
@@ -96,6 +95,7 @@ p {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     padding-top: 2%;
+    perspective: 1000px;
 }
 
 .player1-tracker {
@@ -118,9 +118,21 @@ p {
 
 .player2-tracker {
   background-color: black;
+  color: #F5F7F6;
   grid-column: 10 / span 2;
   grid-row: 1 / span 4;
   margin-left: 100px;
+  padding: 7%;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-left: 100px;
+  text-align: center;
+}
+
+.p2-match-counter {
+  border-top: solid #F5F7F6 2px;
+  border-bottom: solid #F5F7F6 2px;
+  color: #F5F7F6;
 }
 
 h2 {
@@ -135,65 +147,93 @@ h3 {
 .match-counter {
   font-size: 68px;
 }
-
 #card-a {
-    background-color: yellow;
-    grid-column: 4;
-    transform: rotate(-30deg);
+  grid-column: 4;
+  transform: rotate(-30deg);
+}
+
+#card-a.flip {
+  transform: rotate(-30deg) rotateY(180deg);
 }
 
 #card-b {
-     background-color: red;
-     grid-column: 6;
-     transform: rotate(10deg);
+  grid-column: 6;
+  transform: rotate(10deg);
+}
+
+#card-b.flip {
+  transform: rotate(10deg) rotateY(180deg);
 }
 
 #card-c {
-     background-color: green;
-     grid-column: 8;
-     transform: rotate(-5deg);
+  grid-column: 8;
+  transform: rotate(-5deg);
+}
+
+#card-c.flip {
+  transform: rotate(-5deg) rotateY(180deg);
 }
 
 #card-d {
-     background-color: purple;
      grid-column: 3;
      transform: rotate(10deg);
 }
 
+#card-d.flip {
+  transform: rotate(10deg) rotateY(180deg);
+}
+
 #card-e {
-     background-color: white;
      grid-column: 5;
      transform: rotate(-05deg);
 }
 
+#card-e.flip {
+  transform: rotate(-5deg) rotateY(180deg);
+}
+
 #card-f {
-     background-color: pink;
      grid-column: 7;
      transform: rotate(-20deg);
 }
 
+#card-f.flip {
+  transform: rotate(-20deg) rotateY(180deg);
+}
+
 #card-g {
-     background-color: blue;
      grid-column: 9;
      transform: rotate(30deg);
 }
 
+#card-g.flip {
+  transform: rotate(30deg) rotateY(180deg);
+}
+
 #card-h {
-     background-color: teal;
      grid-column: 4;
      transform: rotate(-15deg);
 }
 
+#card-h.flip {
+  transform: rotate(-15deg) rotateY(180deg);
+}
+
 #card-i {
-    background-color: gray;
     grid-column: 6;
     transform: rotate(-5deg);
 }
 
+#card-i.flip {
+  transform: rotate(-5deg) rotateY(180deg);
+}
+
 #card-j {
-    background-color: orange;
     grid-column: 8;
     transform: rotate(15deg);
+}
+#card-j.flip {
+  transform: rotate(15deg) rotateY(180deg);
 }
 
 .front, .back {
@@ -207,24 +247,14 @@ h3 {
   display: none;
 }
 
-.memory-game {
-  /* width: 640px;
-  height: 640px; */
-  border: 2px solid;
-  perspective: 1000px;
-}
-
 .memory-card {
   border: 2px solid;
+  box-shadow: 0px 1px 5px #555;
   width: 200px;
   height: 350px;
   position: relative;
   transform-style: preserve-3d;
   transition: transform .5s;
-}
-
-.memory-card.flip {
-  transform: rotateY(180deg);
 }
 
 .front-face, .back-face {
