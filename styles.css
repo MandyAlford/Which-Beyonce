@@ -10,14 +10,13 @@
 
 /* HEADER */
 header {
-  /* background-color: #FFFFFF; */
-  background-color: red;
-  color: black;
+  background-color: black;
+  color: white;
   height:50px;
 }
 
 h1 {
-  font-size: 16px;
+  font-size: 20px;
   padding: 13px;
   text-align: center;
 }
@@ -74,10 +73,6 @@ p {
   float: right;
 }
 
-.hidden {
-  display: none;
-}
-
 #play-game {
   background-color: black;
   color: white;
@@ -92,4 +87,184 @@ p {
 
 .warning {
   color: red;
+}
+
+/* CARD SECTION  */
+.card-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding-top: 2%;
+    perspective: 1000px;
+}
+
+.player1-tracker {
+  background-color: black;
+  color: #F5F7F6;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 4;
+  padding: 7%;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-right: 10%;
+  text-align: center;
+}
+
+.p1-match-counter {
+  border-top: solid #F5F7F6 2px;
+  border-bottom: solid #F5F7F6 2px;
+  color: #F5F7F6;
+}
+
+.player2-tracker {
+  background-color: black;
+  color: #F5F7F6;
+  grid-column: 10 / span 2;
+  grid-row: 1 / span 4;
+  margin-left: 100px;
+  padding: 7%;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-left: 10%;
+  text-align: center;
+}
+
+.p2-match-counter {
+  border-top: solid #F5F7F6 2px;
+  border-bottom: solid #F5F7F6 2px;
+  color: #F5F7F6;
+}
+
+h2 {
+  padding: 4%
+}
+
+h3 {
+  font-size: 22px;
+  padding: 2%
+}
+
+.match-counter {
+  font-size: 68px;
+}
+#card-a {
+  grid-column: 4;
+  transform: rotate(-30deg);
+}
+
+#card-a.flip {
+  transform: rotate(-30deg) rotateY(180deg);
+}
+
+#card-b {
+  grid-column: 6;
+  transform: rotate(10deg);
+}
+
+#card-b.flip {
+  transform: rotate(10deg) rotateY(180deg);
+}
+
+#card-c {
+  grid-column: 8;
+  transform: rotate(-5deg);
+}
+
+#card-c.flip {
+  transform: rotate(-5deg) rotateY(180deg);
+}
+
+#card-d {
+     grid-column: 3;
+     transform: rotate(10deg);
+}
+
+#card-d.flip {
+  transform: rotate(10deg) rotateY(180deg);
+}
+
+#card-e {
+     grid-column: 5;
+     transform: rotate(-05deg);
+}
+
+#card-e.flip {
+  transform: rotate(-5deg) rotateY(180deg);
+}
+
+#card-f {
+     grid-column: 7;
+     transform: rotate(-20deg);
+}
+
+#card-f.flip {
+  transform: rotate(-20deg) rotateY(180deg);
+}
+
+#card-g {
+     grid-column: 9;
+     transform: rotate(30deg);
+}
+
+#card-g.flip {
+  transform: rotate(30deg) rotateY(180deg);
+}
+
+#card-h {
+     grid-column: 4;
+     transform: rotate(-15deg);
+}
+
+#card-h.flip {
+  transform: rotate(-15deg) rotateY(180deg);
+}
+
+#card-i {
+    grid-column: 6;
+    transform: rotate(-5deg);
+}
+
+#card-i.flip {
+  transform: rotate(-5deg) rotateY(180deg);
+}
+
+#card-j {
+    grid-column: 8;
+    transform: rotate(15deg);
+}
+#card-j.flip {
+  transform: rotate(15deg) rotateY(180deg);
+}
+
+.front, .back {
+	width: 175px;
+	height: 250px;
+  border: solid  2px;
+  box-shadow: 0px 1px 5px #555;
+}
+
+.hidden {
+  display: none;
+}
+
+.memory-card {
+  border: 2px solid;
+  box-shadow: 0px 1px 5px #555;
+  width: 100px;
+  height: 175px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform .5s;
+}
+
+.front-face, .back-face {
+  border: 2px solid;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.front-face {
+  transform: rotateY(180deg);
 }
