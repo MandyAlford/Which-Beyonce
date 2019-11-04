@@ -28,3 +28,10 @@ function enableGameBtn() {
 }
 
 playGameBtn.addEventListener("click", enableGameBtn)
+
+const cards = document.querySelectorAll('.memory-card');
+
+function flipCard(event){
+  event.target.parentElement.classList.toggle('flip');
+}
+cards.forEach(card => addEventListener('click', flipCard))
