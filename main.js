@@ -9,7 +9,7 @@ var warning = document.querySelector(".warning")
 function showInstructions(){
   document.querySelector(".player-form").classList.add("hidden")
   document.querySelector(".game-instructions").classList.remove("hidden")
-  playerGreeting.innerText= `WELCOME ${player1Name.value} AND ${player2Name.value}!`.toUpperCase()
+  playerGreeting.innerText= `WELCOME ${player1Name.value}!`.toUpperCase()
 }
 
 function enableGameBtn() {
