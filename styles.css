@@ -102,6 +102,10 @@ p {
     perspective: 1000px;
 }
 
+.card-wrapper {
+
+}
+
 .player1-tracker {
   background-color: black;
   color: #F5F7F6;
@@ -151,6 +155,7 @@ h3 {
 .match-counter {
   font-size: 68px;
 }
+
 #card-a {
   grid-column: 4;
   transform: rotate(-30deg);

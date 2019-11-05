@@ -1,21 +1,14 @@
-
-
-
-
-
-// class Deck {
-//   constructor(deck){
-//     this.cards= deck.cards;[]
-//     this.matchedCards= [];
-//     this.matches= 0;
-//     this.selectedCards= [];
-//   }
-//   shuffle(){}
-//   checkSelectedCards(){}
-//   moveToMatched(){}
-// }
-
-
+class Deck {
+  constructor(cards){
+    this.cards= cards;
+    this.matchedCards= [];
+    this.matches= 0;
+    this.selectedCards= [];
+  }
+  shuffle(){}
+  checkSelectedCards(){}
+  moveToMatched(){}
+}
 // if selectedCards match, move (push?) to matchedCards
 // matches= counter
 // dataset
@@ -29,8 +22,8 @@
 //     this.cards.push(B)
 //   }
 // }
-// //or <5 and concatenate? 5 x 2?
-//
+//or <5 and concatenate? 5 x 2?
+
 // var frontFace = {
 //   Bey1: "assets/bey1.jpg",
 //   Bey2: "assets/bey2.jpg",
@@ -41,7 +34,7 @@
 //
 //
 // class Card {
-//  constructor(){
+//  constructor(backface){
 //   this.backFace = src="assets/bey1.jpg"
 //   this.frontFace =
 //   this.matchInfo = "Bey1"
