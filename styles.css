@@ -29,6 +29,10 @@ h1 {
 }
 
 /* Main Section */
+
+input {
+  font-size:24px;
+}
 main {
   background: url(assets/beyonce-COB-bw.png);
   background-repeat: no-repeat;
@@ -232,6 +236,7 @@ h3 {
     grid-column: 8;
     transform: rotate(15deg);
 }
+
 #card-j.flip {
   transform: rotate(15deg) rotateY(180deg);
 }
