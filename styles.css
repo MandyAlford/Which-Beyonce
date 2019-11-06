@@ -103,6 +103,7 @@ p {
 }
 
 .card-wrapper {
+  display: grid;
 
 }
 

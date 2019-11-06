@@ -5,8 +5,6 @@ var player2Name = document.querySelector("#player-2")
 var warning = document.querySelector(".warning")
 
 
-// playGameBtn.addEventListener("click", showInstructions);
-
 function showInstructions(){
   document.querySelector(".player-form").classList.add("hidden")
   document.querySelector(".game-instructions").classList.remove("hidden")
@@ -14,7 +12,6 @@ function showInstructions(){
 }
 
 function enableGameBtn() {
-  // event.preventDefault();
   if (player1Name.value === "") {
     warning.innerHTML = "You must enter a name";
   } else if(this.haveInstructionsBeenShown === true) {
@@ -28,13 +25,6 @@ function enableGameBtn() {
     showInstructions();
   }
 }
-
-
-// class Deck {
-//   constructor(cards) {
-//     this.cards = cards
-//   }
-// }
 
 var deck = new Deck([
   new Card("card-a", "assets/bey1.jpg", "Bey1"),
@@ -59,25 +49,13 @@ function buildCards(){
     </div>
     `
   }
+
+  const cards = document.querySelectorAll('.memory-card');
+  cards.forEach(card => addEventListener('click', flipCard))
 }
-// function addCards() {
-//   for(var i=0; i < 10; i++) {
-//     var memoryCard = document.querySelector("#" + deck.cards[i].id)
-//     console.log(memoryCard);
-//     memoryCard.innerHTML=`<img class="back-face" src="assets/card-front.png" alt="B"/>
-//     <img class="front-face" src="${deck.cards[i].frontFaceSrc}" alt ="${deck.cards[i].alt}"/>`
-//   }
-// }
 
 playGameBtn.addEventListener("click", enableGameBtn)
 
-const cards = document.querySelectorAll('.memory-card');
-
 function flipCard(event){
-  let closestElement = Element.closest(selector); 
-  if (event.target.classList === "memory-card"){
-    event.target.parentElement.classList.toggle('flip');
-  }
-  // event.target.parentElement.classList.toggle('flip');
+  event.target.parentElement.classList.toggle('flip');
 }
-cards.forEach(card => addEventListener('click', flipCard))
