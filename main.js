@@ -57,5 +57,17 @@ function buildCards(){
 playGameBtn.addEventListener("click", enableGameBtn)
 
 function flipCard(event){
-  event.target.parentElement.classList.toggle('flip');
+  if (deck.selectedCards.length<2) {
+    event.target.parentElement.classList.toggle('flip');
+    for (var i = 0; i<deck.cards.length; i++){
+    	if (deck.cards[i].id === event.target.parentElement.id){
+     	  var selected= deck.cards[i]
+        deck.selectedCards.push(selected)
+      }
+    }
+  }
+  // get id of card that was clicked
+  // match id with the instance of the card class from the deck
+  // push matching insstance of the card into selected cards array
+  // if there are not already 2 cards in that array
 }
