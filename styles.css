@@ -29,6 +29,10 @@ h1 {
 }
 
 /* Main Section */
+
+input {
+  font-size:24px;
+}
 main {
   background: url(assets/beyonce-COB-bw.png);
   background-repeat: no-repeat;
@@ -98,6 +102,11 @@ p {
     perspective: 1000px;
 }
 
+.card-wrapper {
+  display: grid;
+
+}
+
 .player1-tracker {
   background-color: black;
   color: #F5F7F6;
@@ -147,6 +156,7 @@ h3 {
 .match-counter {
   font-size: 68px;
 }
+
 #card-a {
   grid-column: 4;
   transform: rotate(-30deg);
@@ -232,6 +242,7 @@ h3 {
     grid-column: 8;
     transform: rotate(15deg);
 }
+
 #card-j.flip {
   transform: rotate(15deg) rotateY(180deg);
 }
