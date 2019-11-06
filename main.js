@@ -40,9 +40,9 @@ var deck = new Deck([
 ])
 
 function buildCards(){
-  var cardWrapper = document.querySelector(".card-wrapper")
+  var cardSection = document.querySelector(".card-section")
   for (var i = 0; i < deck.cards.length; i++){
-    cardWrapper.innerHTML += `
+    cardSection.innerHTML += `
     <div class="memory-card" id=${deck.cards[i].id}>
       <img class="back-face" src="assets/card-front.png" alt="B"/>
         <img class="front-face" src=${deck.cards[i].frontFaceSrc} alt=${deck.cards[i].matchInfo}/>
@@ -50,22 +50,44 @@ function buildCards(){
     `
   }
 
+  debugger
   const cards = document.querySelectorAll('.memory-card');
+  if (cards) {
   cards.forEach(card => addEventListener('click', flipCard))
+  }
+
 }
 
 playGameBtn.addEventListener("click", enableGameBtn)
 
 function flipCard(event){
-  if (deck.selectedCards.length<2) {
-    event.target.parentElement.classList.toggle('flip');
+  debugger
+   if (deck.selectedCards.length<=2){
+    // event.target.parentElement.classList.toggle('flip');
     for (var i = 0; i<deck.cards.length; i++){
     	if (deck.cards[i].id === event.target.parentElement.id){
      	  var selected= deck.cards[i]
         deck.selectedCards.push(selected)
+        deck.checkSelectedCards()
+        event.target.parentElement.classList.toggle('flip');
       }
     }
   }
+  if (deck.selectedCards.length===0) {
+    // flip the card over
+    // check the instance of flipped card for unique identifier and match it with the rest of the card traits
+// label the card instance with a selected title
+// add the card instance to the selected cards group
+    event.target.parentElement.classList.toggle('flip');
+    for (var i = 0; i<deck.cards.length; i++){
+    	if (deck.cards[i].id === event.target.parentElement.id){
+     	  var selected= deck.cards[i]
+      }
+    }
+    deck.selectedCards.push(selected)
+  }
+
+  console.log(deck.selectedCards.length)
   // get id of card that was clicked
   // match id with the instance of the card class from the deck
   // push matching insstance of the card into selected cards array
